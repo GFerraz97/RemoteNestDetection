@@ -861,9 +861,10 @@ for (m in listfiles) {
     db1$incub_shift <-
       ifelse(is.na(db1$incub_shift), "NO", db1$incub_shift)
     
-    mean_coords <-      
-      aggregate(list(db1$mean_x_coord, db1$mean_y_coord),  
-                by = list(db1$date, db1$incub_shift), mean)
+    mean_coords <-
+      aggregate(list(db1$coords.x1, db1$coords.x2),
+                by = list(db1$date, db1$incub_shift),
+                mean)
     
     names(mean_coords) <-
       c("date", "incub_shift", "mean_x_coord", "mean_y_coord")
