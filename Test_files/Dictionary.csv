@@ -1,3 +1,3 @@
-Tag Name;Species;Tag ID/Device ID;UUID;Sex;Country
-PTS_2022_ex_6;Pterocles alchata;9984;f394fa46c73c;Male;Spain
-PTS_2022_ex_14;Pterocles alchata;10003;fcf8d9800ff2;Female;Spain
+Tag Name;Species;Tag ID/Device ID;UUID;Sex;Country;Device
+PTS_2022_ex_6;Pterocles alchata;9984;f394fa46c73c;Male;Spain;Druid
+PTS_2022_ex_14;Pterocles alchata;10003;fcf8d9800ff2;Female;Spain;Druid
