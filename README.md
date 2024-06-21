@@ -2,12 +2,17 @@
 
 R script developed to detect nesting attempts using GPS and ODBA data.
 
-1. The script presented in this repository is associated with a paper currently submitted for publication. A reference to the paper explaining the script will be provided after publication.
+1. This repository presents a script that is associated with a paper that was recently submitted for publication. We will provide a reference to the paper explaining the script after publication.
 
-2. This script uses the R package suntools (https://cran.r-project.org/web/packages/suntools/index.html) to estimate sunrise and sunset times (function sunriset), as the maptools package~(https://cran.r-project.org/web/packages/maptools/index.html) was deprecated in October 2023.
+2. Due to the deprecation of the maptools package in October 2023, this script uses the R package suntools (https://cran.r-project.org/web/packages/suntools/index.html) to estimate sunrise and sunset times (function sunriset).
 
-3. Test files for male and female sandgrouses are provided, as well as an example of the dictionary used to add information for each individual. We also include a folder with expected results for each step of the script.
+3. We provide test files for both male and female sandgrouses, along with an example of the dictionary that adds information for each individual. We also include a folder with the expected results for each step of the script.
 
-4. Coordinates in the test files were intentionally modified since both sandgrouse are sensitive to disturbances, and original coordinates were associated with nest sites.
+4. Since sandgrouses are sensitive to disturbances and the original coordinates were associated with nest sites, we intentionally modified the coordinates in the test files.
 
+5. Since both individuals in the examples were tagged with Druid devices, testing the script should take a distance threshold of 31 meters into account.
+
+6. For any doubts about the script please contact goncaloferraz@cibio.up.pt
+
+   
 
