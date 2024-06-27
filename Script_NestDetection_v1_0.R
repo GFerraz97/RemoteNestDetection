@@ -856,8 +856,6 @@ for (m in listfiles) {
   tryCatch({
     db1 <- read.csv(paste(i,m, sep="/"), sep = ",", dec = ".")
 
-    distance_threshold<-unique(ifelse(unique(db1$logger_type=="druid"),31,10))
-    
     db1$incub_shift <-
       ifelse(is.na(db1$incub_shift), "NO", db1$incub_shift)
     
