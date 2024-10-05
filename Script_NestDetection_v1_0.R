@@ -722,7 +722,7 @@ listfolders <-
             recursive = TRUE)
 listfolders<-listfolders[-1]
 
-days <- 3 # Optimal window is 3 days. Change if necessary
+days <- 2 # Optimal periods are 2 or 3 days. Change if necessary
 
 for(i in listfolders){
   tryCatch({
@@ -736,7 +736,7 @@ for(i in listfolders){
         
         db1 <- db1[db1$ODBA <= 2000, ]
         
-        odba_threshold<-unique(ifelse(db1$sex=="Female",269,293)) #change threshold values according to species and sex
+        odba_threshold<-unique(ifelse(db1$sex=="Female",278,286)) #change threshold values according to species and sex
         
         db1$incub_shift <-
           ifelse(is.na(db1$incub_shift), "NO", db1$incub_shift)
@@ -837,7 +837,7 @@ for(i in listfolders){
 distance_threshold <-
   31 #change according to device. 8 meters for Ornitela and 31 for Druid
 
-days <- 3 # Optimal window is 3 days. Change if necessary
+days <- 2 # Optimal periods are 2 or 3 days. Change if necessary
 
 listfolders <-
   list.dirs(path = getwd(),
@@ -991,7 +991,7 @@ error = function(e) {
 
   #output is a file starting by "Merge_ODBA_GPS_"
 
-days <- 3 # Optimal window is 3 days. Change if necessary
+days <- 2 # Optimal periods are 2 or 3 days. Change if necessary
 
 listfolders <-
   list.dirs(path = getwd(),
